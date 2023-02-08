@@ -94,23 +94,23 @@
   <input type="radio" name="personality1_color" value="verde"> 1852
   <span id="personality1_color_result"></span>
   
-  <p>Ce sport prefera aceasta personalitate?</p>
-  <input type="radio" name="personality1_sport" value="inot"> Inot
-  <input type="radio" name="personality1_sport" value="tenis"> Tenis
-  <input type="radio" name="personality1_sport" value="fotbal"> Fotbal
+  <p>Cate ore pe zi le petrecea dormind?</p>
+  <input type="radio" name="personality1_sport" value="inot"> 4 ore
+  <input type="radio" name="personality1_sport" value="tenis"> 2 ore
+  <input type="radio" name="personality1_sport" value="fotbal"> 5 ore
   <span id="personality1_sport_result"></span>
 
-  <p><b>2. Personalitatea 2</b></p>
-  <p>Ce culoare prefera aceasta personalitate?</p>
-  <input type="radio" name="personality2_color" value="galben"> Galben
-  <input type="radio" name="personality2_color" value="albastru"> Albastru
-  <input type="radio" name="personality2_color" value="portocaliu"> Portocaliu
+  <p><b>2. Albert Einstein</b></p>
+  <p>Care era formula renumita a acestuia?</p>
+  <input type="radio" name="personality2_color" value="galben"> c²=a²+b²
+  <input type="radio" name="personality2_color" value="albastru"> E=mc²
+  <input type="radio" name="personality2_color" value="portocaliu"> ∆=b²-4ac
   <span id="personality2_color_result"></span>
   
-  <p>Ce mancare prefera aceasta personalitate?</p>
-  <input type="radio" name="personality2_food" value="pizza"> Pizza
-  <input type="radio" name="personality2_food" value="sushi"> Sushi
-  <input type="radio" name="personality2_food" value="hamburger"> Hamburger
+  <p>Care a fost jucaria lui preferata din copilarie?</p>
+  <input type="radio" name="personality2_food" value="pizza"> busola
+  <input type="radio" name="personality2_food" value="sushi"> creion
+  <input type="radio" name="personality2_food" value="hamburger"> ceas
   <span id="personality2_food_result"></span>
 
   <br><br>
@@ -138,20 +138,20 @@ if (personality1_color === "albastru") {
 if (personality1_sport === "tenis") {
   personality1_sport_result.innerHTML = "";
 } else {
-  personality1_sport_result.innerHTML = "<br>(CORECT: Tenis)";
+  personality1_sport_result.innerHTML = "<br>(CORECT: 2 ore)";
 }
 
 // Rezultate personalitate 2
 if (personality2_color === "albastru") {
   personality2_color_result.innerHTML = "";
 } else {
-  personality2_color_result.innerHTML = "<br>(CORECT: Albastru)";
+  personality2_color_result.innerHTML = "<br>(CORECT: E=mc²)";
 }
 
 if (personality2_food === "pizza") {
   personality2_food_result.innerHTML = "";
 } else {
-  personality2_food_result.innerHTML = "<br>(CORECT: Pizza)";
+  personality2_food_result.innerHTML = "<br>(CORECT: busola)";
 }
 }
 </script>

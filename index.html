@@ -83,5 +83,55 @@
       </div>
     </div>
   </div>
+  <div id="knowledge-game">
+    <h2>Joc de cunoștințe</h2>
+    <p>Alegeți adevărat sau fals pentru următoarele afirmații despre cele 2 personaje:</p>
+    <div class="question">
+      <p>Afirmație 1</p>
+      <button class="true">Adevărat</button>
+      <button class="false">Fals</button>
+    </div>
+    <div class="question">
+      <p>Afirmație 2</p>
+      <button class="true">Adevărat</button>
+      <button class="false">Fals</button>
+    </div>
+  </div>
+<style>
+  .question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  button {
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+  }
+  .true.selected {
+    background-color: green;
+    color: white;
+  }
+  .false.selected {
+    background-color: red;
+    color: white;
+  }
+</style>
+<script>
+  const questions = document.querySelectorAll('.question');
+  questions.forEach(question => {
+    const trueButton = question.querySelector('.true');
+    const falseButton = question.querySelector('.false');
+    trueButton.addEventListener('click', () => {
+      trueButton.classList.add('selected');
+      falseButton.classList.remove('selected');
+    });
+    falseButton.addEventListener('click', () => {
+      falseButton.classList.add('selected');
+      trueButton.classList.remove('selected');
+    });
+  });
+</script>
 </body>
 </html>

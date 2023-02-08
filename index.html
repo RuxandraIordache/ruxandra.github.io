@@ -157,36 +157,36 @@ if (personality2_food === "pizza") {
 </script>
 <div id="grey-box">Ruxandra Iordache</div>
 <style>
-@keyframes rainbow {
-  0% {
-    color: red;
-  }
-  20% {
-    color: orange;
-  }
-  40% {
-    color: yellow;
-  }
-  60% {
-    color: green;
-  }
-  80% {
-    color: blue;
-  }
-  100% {
-    color: purple;
-  }
+#grey-box {
+   width: 200px;
+   height: 50px;
+   background-color: #D3D3D3;
+   border-radius: 25px;
+   font-size: 14px;
+   color: #fff;
+   text-align: center;
+   font-family: 'Ubuntu', sans-serif;
+   line-height: 50px;
+   margin: 0 auto;
+   animation: rainbow 5s linear infinite;
 }
 
-#grey-box {
-  background-color: #CCCCCC;
-  border-radius: 20px;
-  padding: 10px;
-  width: 150px;
-  text-align: center;
-  font-size: 12px;
-  font-family: "Ubuntu";
-  animation: rainbow 2s linear infinite;
+@keyframes rainbow {
+   0% {
+      color: #ff0000;
+   }
+   25% {
+      color: #ffff00;
+   }
+   50% {
+      color: #00ff00;
+   }
+   75% {
+      color: #00ffff;
+   }
+   100% {
+      color: #ff00ff;
+   }
 }
 </style>
 </body>

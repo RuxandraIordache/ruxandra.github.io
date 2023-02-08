@@ -89,9 +89,9 @@
 
   <p><b>1. Nikola Tesla</b></p>
   <p>In ce an s-a nascut?</p>
-  <input type="radio" name="personality1_birth_year" value="1850"> 1850
-  <input type="radio" name="personality1_birth_year" value="1856"> 1866
-  <input type="radio" name="personality1_birth_year" value="1870"> 1870
+  <input type="radio" name="personality1_color" value="albastru"> 1856
+  <input type="radio" name="personality1_color" value="rosu"> 1850
+  <input type="radio" name="personality1_color" value="verde"> 1852
   <span id="personality1_color_result"></span>
   
   <p>Ce sport prefera aceasta personalitate?</p>
@@ -119,20 +119,20 @@
 
 <script>
   function checkAnswers() {
-    const personality1_birth_year = document.querySelector('input[name="personality1_birth_year"]:checked').value;
+    const personality1_color = document.querySelector('input[name="personality1_color"]:checked').value;
     const personality1_sport = document.querySelector('input[name="personality1_sport"]:checked').value;
     const personality2_color = document.querySelector('input[name="personality2_color"]:checked').value;
     const personality2_food = document.querySelector('input[name="personality2_food"]:checked').value;
     
-    let personality1_birth_year_result = document.querySelector("#personality1_birth_year_result");
+    let personality1_color_result = document.querySelector("#personality1_color_result");
     let personality1_sport_result = document.querySelector("#personality1_sport_result");
 let personality2_color_result = document.querySelector("#personality2_color_result");
 let personality2_food_result = document.querySelector("#personality2_food_result");
 // Rezultate personalitate 1
-if (personality1_birth_year === "1856") {
-  personality1_birth_year_result.innerHTML = "<br>(CORECT)";
+if (personality1_color === "albastru") {
+  personality1_color_result.innerHTML = "";
 } else {
-  personality1_birth_year_result.innerHTML = "<br>(GRESIT);
+  personality1_color_result.innerHTML = "<br>(CORECT: Albastru)";
 }
 
 if (personality1_sport === "tenis") {

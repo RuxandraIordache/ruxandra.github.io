@@ -6,6 +6,13 @@
   <title>Lumea științelor și personalitățile ei</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <style>
+      .bibliografie {
+        display: none;
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+<style>
     body {
       font-family: 'Roboto Mono', monospace;
       background-color: #f2f2f2;
@@ -61,7 +68,32 @@
 </head>
 <body>
   <h1>Lumea științelor și personalitățile ei</h1>
-  <div class="container">
+  <h1 style="text-align: center;">Titlul paginii</h1>
+    <button id="bibliografieBtn">Bibliografie</button>
+    <div class="bibliografie" id="bibliografie">
+      <p>
+        Bibliografie:
+        <br />
+        1. Cartea 1, autor 1
+        <br />
+        2. Cartea 2, autor 2
+        <br />
+        3. Cartea 3, autor 3
+      </p>
+    </div>
+    <script>
+      const bibliografieBtn = document.getElementById("bibliografieBtn");
+      const bibliografie = document.getElementById("bibliografie");
+
+      bibliografieBtn.addEventListener("click", function() {
+        if (bibliografie.style.display === "none") {
+          bibliografie.style.display = "block";
+        } else {
+          bibliografie.style.display = "none";
+        }
+      });
+    </script>
+<div class="container">
     <div class="personality">
       <img src="tesla.jpg" alt="Nikola Tesla">
       <div>

@@ -9,7 +9,6 @@
       .bibliografie {
         display: none;
         text-align: center;
-        margin: 20px 0;
       }
     </style>
 <style>
@@ -68,31 +67,13 @@
 </head>
 <body>
   <h1>Lumea științelor și personalitățile ei</h1>
-  <h1 style="text-align: center;">Titlul paginii</h1>
-    <button id="bibliografieBtn">Bibliografie</button>
-    <div class="bibliografie" id="bibliografie">
-      <p>
-        Bibliografie:
-        <br />
-        1. Cartea 1, autor 1
-        <br />
-        2. Cartea 2, autor 2
-        <br />
-        3. Cartea 3, autor 3
-      </p>
+  <h2 style="text-align: center;">Titlul paginii</h2>
+    <button onclick="document.getElementById('bibliografie').style.display = 'block';">Bibliografie</button>
+    <div id="bibliografie" class="bibliografie">
+      <h3>Bibliografie:</h3>
+      <p>1.Personalitati </p>
+      <p>2.Joc interactiv </p>
     </div>
-    <script>
-      const bibliografieBtn = document.getElementById("bibliografieBtn");
-      const bibliografie = document.getElementById("bibliografie");
-
-      bibliografieBtn.addEventListener("click", function() {
-        if (bibliografie.style.display === "none") {
-          bibliografie.style.display = "block";
-        } else {
-          bibliografie.style.display = "none";
-        }
-      });
-    </script>
 <div class="container">
     <div class="personality">
       <img src="tesla.jpg" alt="Nikola Tesla">
